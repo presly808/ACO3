@@ -1,14 +1,18 @@
-package ua.artcode;
+package ua.artcode.week3.day2.time_check;
 
-import java.util.Arrays;
+import ua.artcode.week3.day2.time_check.TimeAction;
 
-/**
- * Created by admin on 24.11.2014.
- */
-public class Merger {
+public class Merger implements TimeAction {
 
+    private int[] mas1;
+    private int[] mas2;
 
-    public static int[] merge(int[] mas1, int[] mas2) {
+    public Merger(int[] mas1, int[] mas2) {
+        this.mas1 = mas1;
+        this.mas2 = mas2;
+    }
+
+    public int[] merge() {
         int[] res = new int[mas1.length + mas2.length];
 
         for (int i = 0, j = 0, k = 0; k < res.length; k++) {
@@ -22,15 +26,12 @@ public class Merger {
                 res[k] = mas2[j++];
             }
         }
-
         return res;
     }
 
 
-    public static void main(String[] args) {
-        int[] m1 = {2,45,50,70,67,89};
-        int[] m2 = {1,5,7,8,8,89};
-        System.out.println(Arrays.toString(merge(m1,m2)));
+    @Override
+    public void action() {
+        merge();
     }
-
 }

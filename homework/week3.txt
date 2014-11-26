@@ -1,0 +1,18 @@
+1. Interfaces
+    Arrays.sort
+    Comparable, Comparator
+    class ArrayList
+    data structures (Stack, Queue)
+    complexity of algorithms big O notation
+    BinarySearch, Merging of two sorted arrays
+
+2. Implement own ArrayList. Extends from ua.artcode.home.AbstractArrayList and implement all methods
+
+3.logic tasks
+  метод String sumString (String a, String b).
+      Должен просуммировать 2 стринга. Типа String a = "110"; String b = "20",
+      должен вернуть стринг "130"
+
+  написать метод, выводящий число макимальной длины последовательно увеличивающихся чисел,
+   т.е. из массива { 6, 5, 3, 1,2,3,4,5, 10, 21} должен показать 1,2,3,4,5
+
