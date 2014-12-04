@@ -5,7 +5,7 @@ import java.util.Stack;
 public class TestStack {
 
     public static void main(String[] args) {
-        ArrayStack as = new ArrayStack();
+        IStack as = new LinkedStack();
         as.push("A");
         as.push("B");
         as.push("C");
@@ -19,6 +19,10 @@ public class TestStack {
         System.out.println(as.pop());
         System.out.println(as.pop());
 
+
+    }
+
+    public static void doStack(IStack as){
 
     }
 }

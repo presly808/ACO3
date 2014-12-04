@@ -1,6 +1,7 @@
 package ua.artcode.data_structures.java;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class ArrayStack implements IStack {
 
@@ -39,5 +40,10 @@ public class ArrayStack implements IStack {
         }
 
         return res.toString();
+    }
+
+    @Override
+    public Iterator iterator() {
+        return null;
     }
 }

@@ -1,18 +1,18 @@
 package ua.artcode.data_structures.java;
 
 
-public interface IStack {
+public interface IStack<T> extends Iterable<T> {
 
 
     /**
      * put element on top of stack
      * @param o element for stack
      */
-    void push(Object o);
+    void push(T o);
 
     /**
      * remove element from top
      * @return element from top
      */
-    Object pop();
+    T pop();
 }
