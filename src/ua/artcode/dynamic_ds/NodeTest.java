@@ -7,7 +7,10 @@ public class NodeTest {
         int[] mas = {1,2,3,4,5};
 
         Node chain = NodeUtils.genChain(mas);
+
+
         System.out.println(NodeUtils.toString(chain));
+        System.out.println(NodeUtils.toString(NodeUtils.reverse(chain)));
 
         /*Node first = new Node(1, null);
         Node second = new Node(2, first);

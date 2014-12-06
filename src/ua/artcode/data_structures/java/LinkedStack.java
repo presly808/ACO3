@@ -34,4 +34,8 @@ public class LinkedStack implements IStack {
     }
 
 
+    @Override
+    public Iterator iterator() {
+        return null;
+    }
 }
