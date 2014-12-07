@@ -18,6 +18,8 @@ public class TestStack {
         System.out.println(as.pop());
         System.out.println(as.pop());
         System.out.println(as.pop());
+        System.out.println(as.pop());
+        System.out.println(as.pop());
 
 
     }
