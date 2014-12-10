@@ -11,4 +11,8 @@ public interface IUserService {
 
     void login(String login, String pass);
 
+    void createTeam(Integer id, String name);
+
+    void addUserToTeam(Integer userId, Integer teamId);
+
 }

@@ -1,9 +1,12 @@
 package ua.artcode.week4.day2;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Cat implements Cloneable, Comparable<Cat> {
+public class Cat implements Serializable, Cloneable, Comparable<Cat> {
+
+
 
     private int age;
     private String home;

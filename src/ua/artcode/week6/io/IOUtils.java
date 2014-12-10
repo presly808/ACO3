@@ -1,6 +1,7 @@
 package ua.artcode.week6.io;
 
 import java.io.*;
+import java.rmi.NoSuchObjectException;
 
 /**
  * Created by admin on 08.12.2014.
@@ -94,6 +95,25 @@ public class IOUtils {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void saveObjToFile(Object o, String path){
+        try (FileOutputStream fos = new FileOutputStream(path);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+            oos.writeObject(o);
+        } catch (IOException e ) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Object loadObjectFromFile(String path) throws NoSuchObjectException {
+        try (FileInputStream fis = new FileInputStream(path);
+            ObjectInputStream ois = new ObjectInputStream(fis)){
+            return ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            throw new NoSuchObjectException("can not deserialize");
         }
     }
 

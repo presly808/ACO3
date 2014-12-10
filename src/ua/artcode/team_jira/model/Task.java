@@ -14,6 +14,14 @@ public class Task {
     public Task() {
     }
 
+    public Task(Integer id, String name, String desc, Integer priority, Integer state) {
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.priority = priority;
+        this.state = state;
+    }
+
     public Task(String name, String desc, Integer priority, Integer state) {
         this.name = name;
         this.desc = desc;

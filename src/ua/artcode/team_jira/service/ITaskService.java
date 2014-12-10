@@ -11,6 +11,12 @@ public interface ITaskService {
 
     void addTask(String name, String desc, Integer priority, Integer state);
 
+    void redirectTask(Integer userId);
+
+    void changeStage(Integer stage);
+
+    void removeTask(Integer id);
+
     List<Task> getAll();
 
 }

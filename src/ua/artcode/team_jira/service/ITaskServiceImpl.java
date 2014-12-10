@@ -27,6 +27,11 @@ public class ITaskServiceImpl implements ITaskService {
     }
 
     @Override
+    public void removeTask(Integer id) {
+
+    }
+
+    @Override
     public List<Task> getAll() {
         return AppDataHolder.getINSTANCE().getTaskList();
     }

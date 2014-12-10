@@ -1,0 +1,33 @@
+1. design patterns Adapter, Decorator
+    java.io.*; class File
+    byte streams (InputStream, OutputStream)
+    char streams(Reader, Writer)
+    try-with-resources
+    finally block
+
+2. Implement class FileHelper
+    - find file(dir)
+    - show directory
+    - show file (content)
+    - delete file or dir
+    - copy file
+    - compare content of files
+    - deepFind (do search in file name and in file content by keyword)
+        * result of search can be written into file
+
+    -* find in file system without recursion
+    -* show content of folder
+       ex.
+        video - 70%
+        audio - 10%
+        document - 5%
+        other - 15%
+
+3. Implements service methods in team_jira
+    Extends structure(create new classes, change types) if you want
+    Add possibility to save result of program into file
+        - use serialization (ObjectOutputStream, ObjectInputStream)
+        - Save info that will be user friendly read
+        - Load info when program start
+
+
