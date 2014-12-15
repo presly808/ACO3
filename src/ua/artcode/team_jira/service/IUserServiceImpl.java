@@ -38,4 +38,14 @@ public class IUserServiceImpl implements IUserService {
         //TODO
         AppDataHolder.getINSTANCE().getUserList();
     }
+
+    @Override
+    public void createTeam(Integer id, String name) {
+
+    }
+
+    @Override
+    public void addUserToTeam(Integer userId, Integer teamId) {
+
+    }
 }

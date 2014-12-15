@@ -21,6 +21,23 @@ public class IOUtils {
 
     }
 
+    public static String readContentFromFile(File path){
+        try(BufferedReader bf = new BufferedReader(new FileReader(path))){
+
+            StringBuilder sb = new StringBuilder();
+
+            String line = null;
+            while ((line = bf.readLine()) != null){
+                sb.append(line).append("\n");
+            }
+
+            return sb.toString();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
     public static void testFileInputStream(String path){
         try {
