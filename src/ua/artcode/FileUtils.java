@@ -23,4 +23,19 @@ public class FileUtils {
         }
     }
 
+    public static void dir(File dir){
+        if(!dir.isDirectory()){
+            throw new IllegalArgumentException("arg is not a dir");
+        }
+
+        for(File child : dir.listFiles()){
+            System.out.println(child.getAbsolutePath());
+        }
+
+    }
+
+    public static void main(String[] args) {
+        dir(new File("c:/"));
+    }
+
 }
